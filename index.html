@@ -1,1 +1,64 @@
-Hello World
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="cmd_files/webcmd.js"></script>
+<script>
+function f()
+{
+  document.getElementById("line").focus();
+  document.getElementById("help").innerHTML = helptext();
+}
+</script>
+
+</head><body onload="f();">
+
+<center>
+
+<form onsubmit="return runcmd(this.line.value);">
+<nobr>
+<input style="font-family: monospace" id="line" type="text" name="cmd" size="80">
+</nobr>
+</form>
+</center>
+
+<font color="#cc0000"><b><span id="error"></span></b></font>
+<br>
+<b><span id="output"></span></b>
+<br>
+
+<center>
+<p id="help"><table cellspacing="0" cellpadding="0" border="0"><tbody><tr><td colspan="3"><b>Searches:</b></td></tr><tr><td><b>a</b></td><td width="10"></td><td>amazon
+</td></tr><tr><td><b>cs</b></td><td width="10"></td><td>google code search
+</td></tr><tr><td><b>g</b></td><td width="10"></td><td>google search
+</td></tr><tr><td><b>gi</b></td><td width="10"></td><td>google image search
+</td></tr><tr><td><b>l</b></td><td width="10"></td><td>mit library
+</td></tr><tr><td><b>oeis</b></td><td width="10"></td><td>online encyclopedia of integer sequences
+</td></tr><tr><td><b>rr</b></td><td width="10"></td><td>csail reading room
+</td></tr><tr><td><b>w</b></td><td width="10"></td><td>wikipedia
+</td></tr><tr height="10">
+</tr><tr><td colspan="3"><b>Shortcuts:</b></td></tr><tr><td><b>bb</b></td><td width="10"></td><td>http://boingboing.net/
+</td></tr><tr><td><b>c</b></td><td width="10"></td><td>google calendar
+</td></tr><tr><td><b>m</b></td><td width="10"></td><td>google mail
+</td></tr><tr><td><b>r</b></td><td width="10"></td><td>http://reddit.com/
+</td></tr><tr height="10">
+</tr><tr><td colspan="3"><b>Additional Commands:</b></td></tr><tr><td><b>e</b></td><td width="10"></td><td>javascript evaluator
+</td></tr><tr height="10">
+</tr></tbody></table>
+</p>
+</center>
+
+<br><br>
+<center>
+<font size="-1">
+You can type URLs too.<br>
+Set a local copy as your home page and use
+the 
+<br>
+<a href="https://addons.mozilla.org/firefox/777/">New Tab
+Homepage</a> Firefox extension to bring it up with Ctl-T.
+<br><br>
+<a href="https://swtch.com/cmd/webcmd.js">source code</a> (build your own!) |
+inspired by <a href="http://www.devx.com/webdev/Article/33577?trk=DXRSS_LATEST">Greg Travis</a></font>
+</center>
+
+
+
+</body></html>
